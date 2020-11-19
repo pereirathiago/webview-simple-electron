@@ -31,12 +31,17 @@ function server() {
   win.webContents.loadURL(config.server)
 }
 
+function reload() {
+  win.webContents.reload()
+}
+
 function createShortcuts() {
     globalShortcut.register('F12', toggleDevTools)
     globalShortcut.register('CmdOrCtrl+J', toggleDevTools)
     globalShortcut.register('F11', fullScreen)
     globalShortcut.register('CmdOrCtrl+T', loadURL)
     globalShortcut.register('CmdOrCtrl+Shift+T', server)
+    globalShortcut.register('F5', reload)
 }
 
 function fullScreen() {
