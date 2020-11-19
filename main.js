@@ -23,10 +23,20 @@ function toggleDevTools() {
   win.webContents.toggleDevTools()
 }
 
+function loadURL() {
+  win.webContents.loadURL(config.url2)
+}
+
+function server() {
+  win.webContents.loadURL(config.server)
+}
+
 function createShortcuts() {
     globalShortcut.register('F12', toggleDevTools)
     globalShortcut.register('CmdOrCtrl+J', toggleDevTools)
     globalShortcut.register('F11', fullScreen)
+    globalShortcut.register('CmdOrCtrl+T', loadURL)
+    globalShortcut.register('CmdOrCtrl+Shift+T', server)
 }
 
 function fullScreen() {

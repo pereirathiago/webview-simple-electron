@@ -1,4 +1,5 @@
 module.exports = {
-    // url: "http://localhost:5500/"
-    url: "https://www.google.com/"
+    url: "https://youtube.com/",
+    url2: "https://www.google.com/",
+    server: "https://localhost:5500/"
 }
