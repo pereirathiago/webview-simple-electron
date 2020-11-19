@@ -28,7 +28,7 @@ function loadURL() {
 }
 
 function server() {
-  win.webContents.loadURL('./index.html')
+  win.webContents.loadFile('./index.html')
 }
 
 function reload() {
