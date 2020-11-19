@@ -15,6 +15,7 @@ function createWindow () {
     }
   })
 
+  win.setAutoHideMenuBar(true)
   win.loadURL(config.url)
 }
 
