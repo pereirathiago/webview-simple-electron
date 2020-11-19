@@ -5,8 +5,8 @@ let win;
 
 function createWindow () {
     win = new BrowserWindow({
-    width: 600,
-    height: 400,
+    width: config.width,
+    height: config.height,
     // frame: false,
     titleBarStyle: 'customButtonsOnHover',
     alwaysOnTop: true,
