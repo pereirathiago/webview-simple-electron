@@ -5,11 +5,11 @@ let win;
 
 function createWindow () {
     win = new BrowserWindow({
-    width: 800,
-    height: 600,
-    titleBarStyle: 'hidden',
-    alwaysOnTop: true,
+    width: 600,
+    height: 400,
     // frame: false,
+    titleBarStyle: 'customButtonsOnHover',
+    alwaysOnTop: true,
     webPreferences: {
       nodeIntegration: true
     }
@@ -23,8 +23,13 @@ function toggleDevTools() {
 }
 
 function createShortcuts() {
-    globalShortcut.register('F12', toggleDevTools)
+    globalShortcut.register('CmdOrCtrl+J', toggleDevTools)
+    globalShortcut.register('F11', fullScreen)
 }
+
+function fullScreen() {
+    win.isSimpleFullScreen() ? win.setSimpleFullScreen(false) : win.setSimpleFullScreen(true);
+  }
 
 app.whenReady()
 .then(createWindow)
