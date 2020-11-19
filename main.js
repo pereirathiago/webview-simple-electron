@@ -1,4 +1,5 @@
 const { app, BrowserWindow } = require('electron')
+const config = require('./config')
 
 function createWindow () {
   const win = new BrowserWindow({
@@ -12,8 +13,10 @@ function createWindow () {
     }
   })
 
-  win.loadURL('http://localhost:5500/')
+  win.loadURL('config.url')
 }
+
+
 
 app.whenReady().then(createWindow)
 
