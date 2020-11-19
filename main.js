@@ -16,7 +16,7 @@ function createWindow () {
   })
 
   win.setAutoHideMenuBar(true)
-  win.loadURL(config.url)
+  win.loadFile('./index.html')
 }
 
 function toggleDevTools() {
@@ -28,7 +28,7 @@ function loadURL() {
 }
 
 function server() {
-  win.webContents.loadURL(config.server)
+  win.webContents.loadURL('./index.html')
 }
 
 function reload() {
