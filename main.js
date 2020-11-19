@@ -15,15 +15,16 @@ function createWindow () {
     }
   })
 
-  win.loadURL('config.url')
+  win.loadURL(config.url)
 }
 
 function toggleDevTools() {
-    win.webContents.toggleDevTools()
+  win.webContents.toggleDevTools()
 }
 
 function createShortcuts() {
     globalShortcut.register('F12', toggleDevTools)
+    globalShortcut.register('CmdOrCtrl+J', toggleDevTools)
     globalShortcut.register('F11', fullScreen)
 }
 
