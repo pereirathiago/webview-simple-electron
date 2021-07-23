@@ -34,7 +34,7 @@ Um Webview feito em electron, que fica sempre sobre todos os programas na tela. 
 
 # :cd: Tecnologias utilizadas
 
-A plataforma Google Glass utiliza as tecnologias:
+O ViewWeb utiliza as tecnologias:
 
 - JavaScript
 - ElectronJS
