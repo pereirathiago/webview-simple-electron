@@ -34,7 +34,7 @@ Um Webview feito em electron, que fica sempre sobre todos os programas na tela. 
 
 # :cd: Tecnologias utilizadas
 
-O ViewWeb utiliza as tecnologias:
+O WebView utiliza as tecnologias:
 
 - JavaScript
 - ElectronJS
