@@ -19,5 +19,8 @@
   "homepage": "https://github.com/ThiagoPereira232/webview-simple-electron#readme",
   "devDependencies": {
     "electron": "^11.0.1"
+  },
+  "dependencies": {
+    "e": "^0.2.1"
   }
 }
